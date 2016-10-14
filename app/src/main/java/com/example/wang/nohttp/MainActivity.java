@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                   3.请求的监听事件  回调对象，接受请求结果
                 */
                 queue.add(INT_WHAT,request,onResponseListener);
+                Log.i("information","第一个上传的Git文件");
             }
         });
 
