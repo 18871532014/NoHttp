@@ -1,16 +1,17 @@
 # NoHttp
-NoHttp框架简单实用
+<b>NoHttp框架简单实用</b>
+
 Nohttp框架学习
 开发环境：AndroidStudio
 自己理解：
                     创建一个网络连接池quequ，将需要进行的链接都丢到这个池中间去
 项目代码上传
 
-第一步：添加依赖文件
+<b>第一步：添加依赖文件</b>
     在build.gradle 文件长添加注解文件 compile 'com.yolanda.nohttp:nohttp:+'
 
-第二步：穿件Nohttp链接池
-        //请求队列
+<b>第二步：穿件Nohttp链接池</b>
+      ```  //请求队列
     private RequestQueue queue ;
 
     初始化队列,默认的是三个请求 可以传入数量改变请求数量：Nohttp.newRequestQueue(1);
@@ -18,8 +19,9 @@ Nohttp框架学习
     
     开始创建请求
     Request<String> request = NoHttp.createStringRequest
-("http://www.baidu.com",what);
-   在这里需要传入两个值 
+    ("http://www.baidu.com",what);
+       在这里需要传入两个值 
+   
     1.需要访问的页面链接
     2.链接的标识码
 
@@ -37,8 +39,9 @@ Nohttp框架学习
        添加请求头
           request.addHeader("Author", "nohttp_sample");
       */
+      ```
 
-     开始http访问链接,
+开始http访问链接,
 /*  传入三个参数
    1.进程自定义编号   what: 当多个请求同时使用同一个OnResponseListener时用来区分请求, 类似handler的what一样
    2.对应的请求
